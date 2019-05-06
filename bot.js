@@ -36,7 +36,7 @@ client.on('message', message => {
 
 
            
-              member.send( "**[" + ` ${member} ` + "]**" + "  " + message.content.substr(3));                                        message.delete();
+              member.send(message.content.substr(3));                                        message.delete();
             
                                                     });
             
