@@ -29,6 +29,14 @@ client.on('ready', () => {
   console.log('')
 });
 
+
+client.on('message', message => {
+  if (message.content === "*bc" ) {
+message.channel.sendMessage("**:stopwatch:   | Sending your message...**");
+ }
+});
+
+
 client.on('message', message => {
     if (message.content.split(' ')[0] == '*bc')
        message.guild.members.forEach( member => {
