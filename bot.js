@@ -4,7 +4,8 @@ const client = new Discord.Client();
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 //client.user.setGame(` seqύence  `)
-client.user.setGame(` seqύence | BC  `,"http://twitch.tv/S-F")
+//client.user.setGame(` seqύence | BC  `,"http://twitch.tv/S-F")
+  client.user.setActivity("my users.",{type: 'WATCHING'});
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -29,7 +30,7 @@ client.user.setGame(` seqύence | BC  `,"http://twitch.tv/S-F")
 });
 
 client.on('message', message => {
-    if (message.content.split(' ')[0] == '-bc')
+    if (message.content.split(' ')[0] == '*bc')
        message.guild.members.forEach( member => {
          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
 
