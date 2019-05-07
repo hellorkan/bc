@@ -6,7 +6,7 @@ client.on('ready', () => {
 //client.user.setGame(` seqύence  `)
 //client.user.setGame(` seqύence | BC  `,"http://twitch.tv/S-F")
   client.user.setStatus('dnd')
-  client.user.setActivity("my users.",{type: 'WATCHING'});
+  client.user.setActivity("relax orders.",{type: 'LISTENING'});
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
